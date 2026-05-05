@@ -57,15 +57,19 @@ project/
 ## Main Functions
 
 1. wavelet_transform(hist)
+   
 Converts the raw histogram into Haar wavelet coefficients.
 
 2. add_laplace_noise(coeffs, epsilon, random_state=None)
+   
 Adds Laplace noise to the wavelet coefficients according to the privacy budget epsilon.
 
 3. inverse_wavelet_transform(coeffs)
+   
 Reconstructs a histogram from the wavelet coefficients.
 
 4. privelet_1d(hist, epsilon, random_state=None)
+   
 Runs the full 1D Privelet pipeline: raw histogram -> wavelet transform -> noisy coefficients -> inverse transform -> noisy histogram
 
 ## Main Features
